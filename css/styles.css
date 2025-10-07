@@ -1,0 +1,13 @@
+body {
+    width: 100%;
+    display: flex;
+}
+
+
+.banner {
+    background-color: gray;
+}
+
+.content {
+    flex: 2 1 auto;
+}
