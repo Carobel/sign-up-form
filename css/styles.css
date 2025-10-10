@@ -20,7 +20,7 @@ input, button, textarea, select {
 }
 
 
-/* LAYOUT */
+/* LAYOUT AND BANNER */
 body {
     width: 100%;
     display: flex;
@@ -41,19 +41,43 @@ body {
 .content {
     background-color: lightgray;
     flex: 2;
+    display: flex;
+    justify-content: center;
 }
-
 
 /* CONTENT */
-.content div,
-.content form {
-  padding: 70px;
+.content > * {
+  padding: 0 3rem;
+  flex: 0 1 300px;
 }
 
-#sign-up-form {
-    flex: 2;
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
 }
 
-#sign-up-form {
+.introduction > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* form */
+#form-inputs {
   background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.form-actions > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
