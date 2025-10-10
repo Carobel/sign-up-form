@@ -21,9 +21,15 @@ input, button, textarea, select {
 
 
 /* LAYOUT AND BANNER */
+:root {
+  font-family: "Trebuchet MS", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: clamp(1rem, 0.75rem+1.5vw, 2rem);
+}
+
 body {
     width: 100%;
     display: flex;
+    
 }
 
 .banner, 
@@ -53,7 +59,7 @@ body {
 
 .introduction {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: flex-end;
   padding-bottom: 3rem;
 }
