@@ -1,9 +1,8 @@
-/* 1. Use a more-intuitive box-sizing model */
+/* RESETS */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
 * {
   margin: 0;
 }
@@ -21,11 +20,11 @@ input, button, textarea, select {
 }
 
 
+/* LAYOUT */
 body {
     width: 100%;
     display: flex;
 }
-
 
 .banner, 
 .content {
@@ -44,10 +43,17 @@ body {
     flex: 2;
 }
 
-.introduction {
-    flex: 1;
+
+/* CONTENT */
+.content div,
+.content form {
+  padding: 70px;
 }
 
-#form-container {
-    flex: 1;
+#sign-up-form {
+    flex: 2;
+}
+
+#sign-up-form {
+  background-color: white;
 }
