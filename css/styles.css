@@ -1,9 +1,8 @@
-/* 1. Use a more-intuitive box-sizing model */
+/* RESETS */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
 * {
   margin: 0;
 }
@@ -21,11 +20,17 @@ input, button, textarea, select {
 }
 
 
+/* LAYOUT AND BANNER */
+:root {
+  font-family: "Trebuchet MS", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: clamp(1rem, 0.75rem+1.5vw, 2rem);
+}
+
 body {
     width: 100%;
     display: flex;
+    
 }
-
 
 .banner, 
 .content {
@@ -43,13 +48,43 @@ body {
 .content {
     background-color: lightgray;
     flex: 2;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENT */
+.content > * {
+  padding: 0 3rem;
+  flex: 0 1 300px;
 }
 
 .introduction {
-    flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  padding-bottom: 3rem;
 }
 
-#form-container {
-    flex: 2;
+.introduction > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* form */
+#form-inputs {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3rem;
+}
+
+.form-actions > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

@@ -8,17 +8,47 @@
     <script src="./js/script.js" defer></script>
 </head>
 <body>
+    <!-- BANNER PART -->
     <div class="banner"></div>
+
+    <!-- CONTENT PART -->
     <div class="content">
+        <!-- introduction -->
         <div class="introduction">
             <p>Do you love images of cute rats, mice and guinea pigs? Would you love to receive them on a weekly basis via email? Then you wish this form was real! Unfortunately it is for front-end web form practice only. Luckily you can pretend-sign up all the same.</p>
             <p>Sign up now!</p>
         </div>
-        <div id="form-container">
-            <form action="">
-                Form here.
-            </form>
+
+        <!-- form inputs -->
+        <form id="form-inputs" action="">
+            <h2>Let's do this!</h2>
+            <div class="form-row">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="number" id="phone" name="phone">
+            </div>
+            <div class="form-row">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input type="password" id="password-confirm" name="password-confirm">
+            </div>
+        </form>
+
+        <!-- form actions -->
+        <div class="form-actions">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
+
 
     </div>
 </body>
