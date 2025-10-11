@@ -35,13 +35,15 @@ body {
 }
 
 .banner {
-    background-color: gray;
+    background-image: url('../bin/rat-vertical.jpg');
+    background-size: cover;
     flex: 1;
 }
 
 .content {
     background-color: lightgray;
     flex: 2;
+    padding: 30px;
 }
 
 .introduction {
@@ -49,5 +51,5 @@ body {
 }
 
 #form-container {
-    flex: 1;
+    flex: 2;
 }
