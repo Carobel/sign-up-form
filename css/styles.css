@@ -147,13 +147,18 @@ body {
 }
 
 .form-unit label {
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   color: #2B2E33;
 }
 
 .form-unit input {
   width: 100%;
+  border-radius: solid 1px grey;
+}
+
+.form-unit input:invalid {
+  border-color: rgb(207, 36, 50);
 }
 
 /* form actions (button and sign-in option) */
