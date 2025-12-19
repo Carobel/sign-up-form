@@ -26,6 +26,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FFF Tusj';
+    src: url('../bin/fonts/FFFTusj-Bold.woff2') format('woff2'),
+        url('../bin/fonts/FFFTusj-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* RESETS */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -58,11 +67,9 @@ body {
     display: flex;
 }
 
-.banner, 
 .content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .banner {
@@ -71,14 +78,22 @@ body {
     flex: 1;
 }
 
-.banner:first-child {
+.banner .title-card {
   color: white;
+  height: 200px;
   width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: 'FFF Tusj';
+  font-size: 40px;
 }
 
-.banner:first-child h1 {
-  position: absolute;
-  bottom: 0;
+.banner .title-card img {
+  width: 120px;
+  height: 120px;
+  filter: invert(100%);
 }
 
 .content {
@@ -88,13 +103,9 @@ body {
 }
 
 /* CONTENT */
-.content > *,
-.banner > * {
-  padding: 0 4rem;
-  flex: 0 1 400px;
-}
-
 .introduction {
+  padding: 0 4rem;
+  flex: 0 1 300px;
   display: flex;
   flex-direction: column; 
   justify-content: flex-end;
@@ -103,7 +114,6 @@ body {
 }
 
 .introduction > * {
-  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: clamp(1.2rem, 1vw, 1.5rem);
   font-weight: 500;
@@ -111,8 +121,8 @@ body {
 
 /* form inputs */
 .form-container {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 4rem;
+  flex: 0 1 400px;
   background-color: white;
   box-shadow: 0px 3px 7px 1px rgb(0,0,0,0.3);
 }
@@ -154,15 +164,18 @@ body {
 
 .form-unit input {
   width: 100%;
-  border-radius: solid 1px grey;
+  border: solid 1px grey;
+  border-radius: 5px;
 }
 
 .form-unit input:invalid {
-  border-color: rgb(207, 36, 50);
+  border-color: #b7537d;
 }
 
 /* form actions (button and sign-in option) */
 .form-actions {
+  padding: 0 4rem;
+  flex: 0 1 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
